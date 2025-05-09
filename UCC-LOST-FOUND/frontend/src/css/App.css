@@ -45,3 +45,20 @@ html, body {
   font-size: 1.5rem;
   font-weight: bold;
 }
+
+.get-started-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff; /* Blue background */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.get-started-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}

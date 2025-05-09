@@ -1,0 +1,16 @@
+.facebook-login-button {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #4267B2; /* Facebook blue */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.facebook-login-button:hover {
+  background-color: #365899; /* Darker Facebook blue on hover */
+}
