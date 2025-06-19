@@ -1,6 +1,7 @@
 import '../css/Login.css';
 import logo from '../assets/img/image 16.png';
 import { Link } from 'react-router-dom';
+import facebookIcon from '../assets/img/facebook.png';
 
 function Login() {
   return (
@@ -21,11 +22,11 @@ function Login() {
         <div style={{ textAlign: 'right', marginBottom: 10, width: '100%' }}>
           <a href="#" style={{ color: '#333', fontSize: 14, textDecoration: 'none' }}>Forgot Password</a>
         </div>
-        <button type="button" className="facebook-login-button" style={{ background: '#E6A8F7', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, fontWeight: 700, width: '100%' }}>
-          <span style={{ fontSize: 20, marginRight: 8 }}><i className="fab fa-facebook-square" /></span>
-          Sign in with <span style={{ fontWeight: 700 }}>Facebook</span>
+        <button type="button" className="facebook-login-button">
+          <img src={facebookIcon} alt="Facebook" className="fb-img" />
+          Sign in with <strong>Facebook</strong>
         </button>
-        <button type="submit" className="login-button" style={{ background: '#E6A8F7', color: '#fff', fontWeight: 700, borderRadius: 20, marginTop: 10, width: '100%' }}>Sign in</button>
+        <button type="submit" className="login-button" style={{ background: '#E6A8F7', color: '#fff', fontWeight: 700, borderRadius: 20, marginTop: 10 }}>Sign in</button>
       </form>
       <div style={{ marginTop: 30, fontSize: 16, textAlign: 'center' }}>
         Don&apos;t have an account? <Link to="/signup" style={{ fontWeight: 700, fontStyle: 'italic', color: '#000' }}>Sign up</Link> instead.

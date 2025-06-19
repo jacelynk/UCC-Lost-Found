@@ -1,6 +1,7 @@
 import '../css/Login.css';
 import logo from '../assets/img/image 16.png';
 import { Link } from 'react-router-dom';
+import facebookIcon from '../assets/img/facebook.png';
 
 function SignUp() {
   return (
@@ -30,11 +31,11 @@ function SignUp() {
           <label>Confirm Password</label>
           <input type="password" className="login-input" />
         </div>
-        <button type="button" className="facebook-login-button" style={{ background: '#E6A8F7', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, fontWeight: 700, width: '100%' }}>
-          <span style={{ fontSize: 20, marginRight: 8 }}><i className="fab fa-facebook-square" /></span>
-          Continue with <span style={{ fontWeight: 700 }}>Facebook</span>
+        <button type="button" className="facebook-login-button">
+          <img src={facebookIcon} alt="Facebook" className="fb-img" />
+          Continue with <strong>Facebook</strong>
         </button>
-        <button type="submit" className="login-button" style={{ background: '#E6A8F7', color: '#fff', fontWeight: 700, borderRadius: 20, marginTop: 10, width: '100%' }}>Sign up</button>
+        <button type="submit" className="login-button" style={{ background: '#E6A8F7', color: '#fff', fontWeight: 700, borderRadius: 20, marginTop: 10 }}>Sign up</button>
       </form>
       <div style={{ marginTop: 30, fontSize: 16, textAlign: 'center' }}>
         Already have an account? <Link to="/login" style={{ fontWeight: 700, fontStyle: 'italic', color: '#000' }}>Sign in</Link> instead.

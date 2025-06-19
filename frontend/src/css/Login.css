@@ -56,8 +56,8 @@ body, .login-full-bg {
 }
 
 .login-title {
-  font-size: 17px;
-  margin-bottom: 18px;
+  font-size: 1.1rem !important;
+  margin-bottom: 16px;
   color: #333;
   font-weight: 700;
   text-align: center;
@@ -67,100 +67,75 @@ body, .login-full-bg {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 100%;
 }
 
 .login-form label {
-  text-align: left;
-  font-size: 13px;
+  font-size: 10px;
+  margin-bottom: 2px;
+  color: #333;
+  font-weight: 500;
 }
 
 .login-input {
-  padding: 10px;
-  font-size: 13px;
-  border: 1px solid #333;
-  border-radius: 8px;
+  height: 48.69px;
   width: 100%;
+  max-width: 220px;
+  min-width: 0;
+  font-size: 0.95rem;
+  padding: 7px 12px;
+  margin: 0 auto;
   box-sizing: border-box;
-  margin-bottom: 0;
+  border-radius: 3%;
+  border: 1px solid #ccc;
 }
 
 .login-input:focus {
-  border-color: #007bff !important;
-  outline: none !important;
-}
-
-.login-button, .facebook-login-button {
-  border-radius: 25px !important;
-  max-width: 320px;
-  width: 100%;
-  margin: 0 auto 18px auto;
-  display: block;
+  border-color: #007bff;
+  outline: none;
 }
 
 .login-button {
-  background-color: #e6a8f7;
+  padding: 8px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
   border: none;
-  padding: 0;
-  height: 36px;
-  border-radius: 8px;
-  color: #fff;
-  font-size: 15px;
-  font-weight: 500;
-  width: 120px;
-  margin: 0 auto 14px auto;
-  display: block;
-  transition: background 0.2s;
-  line-height: 36px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.login-button:disabled {
-  opacity: 0.7;
-  cursor: not-allowed;
+.login-button:hover {
+  background-color: #0056b3;
 }
 
 .facebook-login-button {
-  border: 1px solid #bdbdbd !important;
-  border-radius: 8px !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #e6a8f7;
-  color: #fff;
-  font-weight: 500;
-  font-size: 16px;
-  height: 48px;
-  width: 100%;
-  max-width: 320px;
-  padding: 0;
-  gap: 10px;
+  margin-top: 20px;
+  padding: 8px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: white;
+  background-color: #4267B2;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  margin: 20px auto 8px auto;
-  transition: background 0.2s;
+  transition: background-color 0.3s ease;
 }
 
-.facebook-login-button strong {
-  font-weight: 700;
-}
-
-.fb-img {
-  width: 28px;
-  height: 28px;
-  border-radius: 0 !important;
-  margin-right: 8px;
-  object-fit: cover;
-  background: transparent;
+.facebook-login-button:hover {
+  background-color: #365899;
 }
 
 .login-logo-center {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .login-logo-large {
-  height: 110px;
+  height: 120px;
   width: auto;
 }
 
@@ -172,29 +147,25 @@ body, .login-full-bg {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 24px 4px;
+  padding: 32px 8px;
 }
 
 .login-form-center {
-  width: 100%;
-  max-width: 320px;
-  margin: 24px auto;
-  font-family: Arial, sans-serif;
-  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
 }
 
 @media (max-width: 480px) {
   .login-logo-large {
-    height: 80px !important;
+    height: 100px;
   }
   .login-input {
-    width: 90vw !important;
-    min-width: 0 !important;
-    max-width: 180px !important;
-    border-radius: 25px !important;
+    width: 80vw;
+    min-width: 0;
   }
 }
 
@@ -212,9 +183,4 @@ input[type='checkbox'] {
   justify-content: center;
   align-items: center;
   margin: 8px 0;
-}
-
-.signin-link {
-  font-size: 13px;
-  margin-top: 12px;
-}
+} 
