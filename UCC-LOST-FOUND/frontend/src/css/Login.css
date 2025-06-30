@@ -71,8 +71,10 @@ body, .login-full-bg {
 }
 
 .login-form label {
-  text-align: left;
+  color: #555; /* Change to #fff for white, or #555 for dark gray */
   font-size: 13px;
+  margin-bottom: 4px;
+  display: block;
 }
 
 .login-input {

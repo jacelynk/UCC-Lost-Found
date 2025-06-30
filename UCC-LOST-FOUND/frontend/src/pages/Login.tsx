@@ -1,6 +1,6 @@
 import '../css/Login.css';
-import logo from '../assets/img/image 16.png';
 import { Link } from 'react-router-dom';
+import logo from '../assets/img/image 16.png';
 import facebookIcon from '../assets/img/facebook.png';
 
 function Login() {
